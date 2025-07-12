@@ -8,7 +8,122 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <style>
+    body {
+     font-family: 'Segoe UI', sans-serif;
+     background-color: #f8f9fa;
+   }
+   .profile-img {
+     border-radius: 50%;
+     width: 200px;
+     height: 200px;
+     object-fit: cover;
+     border: 5px solid white;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   }
+   .icon-circle {
+     background-color: #0d1117;
+     color: white;
+     border-radius: 50%;
+     padding: 10px;
+     width: 40px;
+     height: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   .btn-custom {
+     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+     transition: 0.3s ease;
+   }
+   .btn-custom:hover {
+     transform: translateY(-2px);
+   }
+   .quick-stats .stat-box {
+     background-color: #0d1117;
+     color: white;
+     padding: 10px 20px;
+     border-radius: 10px;
+     font-size: 0.9rem;
+     margin-right: 10px;
+   }
+   .nav-link {
+     color: #000 !important;
+   }
+   .greeting-emoji {
+     animation: wave 2s infinite;
+     display: inline-block;
+   }
+   @keyframes wave {
+     0% { transform: rotate(0deg); }
+     20% { transform: rotate(15deg); }
+     40% { transform: rotate(-10deg); }
+     60% { transform: rotate(15deg); }
+     80% { transform: rotate(-5deg); }
+     100% { transform: rotate(0deg); }
+   }
+
+   /*About Us page css*/
+    .about-section {
+     animation: fadeInUp 1s ease;
+   }
+   .about-box {
+     background-color: white;
+     border-radius: 10px;
+     padding: 25px;
+     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+     transition: 0.3s;
+   }
+   .about-box:hover {
+     transform: translateY(-5px);
+   }
+   .icon-circle {
+     background-color: #0d1117;
+     color: white;
+     padding: 10px;
+     border-radius: 50%;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 38px;
+     height: 38px;
+     margin-right: 10px;
+   }
+   @keyframes fadeInUp {
+     from { opacity: 0; transform: translateY(20px); }
+     to { opacity: 1; transform: translateY(0); }
+   }
+   .profile-pic {
+     width: 100%;
+     max-width: 300px;
+     border-radius: 10px;
+     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+   }
+   .info-label {
+     font-weight: 500;
+     margin-bottom: 2px;
+   }
+
+
+   .project-card {
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+
+.nav-link.active {
+  color: #000;
+  font-weight: 600;
+}
+
+  </style>
 </head>
 
 <body>
@@ -114,7 +229,7 @@
       <!-- Project Card 1 -->
       <div class="col-md-4" data-aos="zoom-in">
         <a href="https://chamzdcoder.github.io/MbrelolomariChamberlain.git.io/" target="_blank" class="text-decoration-none">
-          <div class="card project-card text-white text-center border-0 rounded-4 shadow-sm" style="background-image: url('../portfolio/assets/site2.png');">
+          <div class="card project-card text-white text-center border-0 rounded-4 shadow-sm" style="background-image: url('./assets/site2.png');">
             <div class="card-body d-flex align-items-center justify-content-center" style="backdrop-filter: blur(4px); background-color: rgba(0,0,0,0.4); height: 200px;">
               <h5 class="fw-semibold">Landing Page of klovax site</h5>
             </div>
@@ -125,7 +240,7 @@
       <!-- Project Card 2 -->
       <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
         <a href="https://chamzdcoder.github.io/-restaurant-site/#" target="_blank" class="text-decoration-none">
-          <div class="card project-card text-white text-center border-0 rounded-4 shadow-sm" style="background-image: url('../portfolio/assets/site.png');">
+          <div class="card project-card text-white text-center border-0 rounded-4 shadow-sm" style="background-image: url('./assets/site.png');">
             <div class="card-body d-flex align-items-center justify-content-center" style="backdrop-filter: blur(4px); background-color: rgba(0,0,0,0.4); height: 200px;">
               <h5 class="fw-semibold">Landing Page of a restaurant-site</h5>
             </div>
